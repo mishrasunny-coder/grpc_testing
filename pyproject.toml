@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "grpc-testing"
+version = "0.1.0"
+description = "grpc testing"
+authors = ["y"]
+license = "n"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+grpcio-tools = {version = "^1.68.1", allow-prereleases = true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
