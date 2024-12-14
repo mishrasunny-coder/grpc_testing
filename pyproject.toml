@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.9"
 grpcio-tools = {version = "^1.68.1", allow-prereleases = true}
+grpcio-reflection = "^1.68.1"
 
 
 [build-system]

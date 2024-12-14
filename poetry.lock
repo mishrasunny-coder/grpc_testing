@@ -68,6 +68,21 @@ files = [
 protobuf = ["grpcio-tools (>=1.68.1)"]
 
 [[package]]
+name = "grpcio-reflection"
+version = "1.68.1"
+description = "Standard Protobuf Reflection Service for gRPC"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "grpcio_reflection-1.68.1-py3-none-any.whl", hash = "sha256:c3f850724d899d004424605829d735ffcde464a8fa259743df486693bc0345e7"},
+    {file = "grpcio_reflection-1.68.1.tar.gz", hash = "sha256:cffcb33c4cbdde771a06fd55ca6fe149c6f89ec330c9a4010730bb2998597982"},
+]
+
+[package.dependencies]
+grpcio = ">=1.68.1"
+protobuf = ">=5.26.1,<6.0dev"
+
+[[package]]
 name = "grpcio-tools"
 version = "1.68.1"
 description = "Protobuf code generator for gRPC"
@@ -179,4 +194,4 @@ type = ["importlib_metadata (>=7.0.2)", "jaraco.develop (>=7.21)", "mypy (>=1.12
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "72de5c19d2d359b3af1353632056f4bbe8d56d76ce1796cbedb9ed05aa428300"
+content-hash = "0ede3a6ef4aed8c6d3807050aaaabe1be59f1c326f0489b7ac53dd9a3bc59217"
