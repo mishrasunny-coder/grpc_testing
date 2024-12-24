@@ -11,6 +11,7 @@ python = "^3.9"
 grpcio-tools = {version = "^1.68.1", allow-prereleases = true}
 grpcio-reflection = "^1.68.1"
 behave = "^1.2.6"
+pytest = "^8.3.4"
 
 
 [build-system]

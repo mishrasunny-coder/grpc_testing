@@ -31,3 +31,20 @@ clean:
 
 # Rebuild, tag, and run
 rebuild: stop clean build run
+
+.PHONY: test-unit test-integration test-e2e
+
+# Run unit tests
+test-unit:
+	@echo "Running unit tests..."
+	poetry run pytest tests/unit --disable-warnings -v
+
+# Run integration tests
+test-integration:
+	@echo "Running integration tests..."
+	poetry run pytest tests/integration --disable-warnings -v
+
+# Run end-to-end (E2E) tests
+test-e2e:
+	@echo "Running end-to-end (E2E) tests..."
+	poetry run pytest tests/e2e --disable-warnings -v
