@@ -10,6 +10,7 @@ readme = "README.md"
 python = "^3.9"
 grpcio-tools = {version = "^1.68.1", allow-prereleases = true}
 grpcio-reflection = "^1.68.1"
+behave = "^1.2.6"
 
 
 [build-system]
